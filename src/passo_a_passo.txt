@@ -7,5 +7,9 @@ docker push mcgregorydouglas/conversao-temperatura:v1
 docker tag mcgregorydouglas/conversao-temperatura:latest
 docker push mcgregorydouglas/conversao-temperatura:latest
 docker container run -d -p8080:8080 mcgregorydouglas/conversao-temperatura:latest
+# Repositorio github
+https://github.com/GregoryPinto/conversao-temperatura
+# Docker hub
+https://hub.docker.com/repository/docker/mcgregorydouglas/conversao-temperatura/general
 
 
