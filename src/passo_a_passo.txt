@@ -1,0 +1,11 @@
+git clone https://github.com/GregoryPinto/conversao-temperatura.git
+cd conversao-temperatura\src
+# foi necessario fazer o login no hub
+docker login
+docker build -t mcgregorydouglas/conversao-temperatura:v1 .
+docker push mcgregorydouglas/conversao-temperatura:v1
+docker tag mcgregorydouglas/conversao-temperatura:latest
+docker push mcgregorydouglas/conversao-temperatura:latest
+docker container run -d -p8080:8080 mcgregorydouglas/conversao-temperatura:latest
+
+
