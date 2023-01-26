@@ -12,4 +12,6 @@ https://github.com/GregoryPinto/conversao-temperatura
 # Docker hub
 https://hub.docker.com/repository/docker/mcgregorydouglas/conversao-temperatura/general
 
-
+# apos a criação dos manifestos no k8s/deployment.yaml com a porta do pod 8080 -> 80, precisa recriar o node com o direcionamento de porta
+k3d cluster create meucluster -p "80:30000@loadbalancer"
+# agora não precisa mais do port-forward 
